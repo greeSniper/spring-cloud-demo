@@ -1,0 +1,27 @@
+server:
+  port: 7000
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/greeSniper/SpringCloudConfigRepository.git
+          username: 819222699@qq.com
+          password: liuying1991
+
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8888/eureka/,http://localhost:8889/eureka/
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.0.107:8888/eureka/,http://192.168.0.107:8889/eureka/
+
+management:
+  security:
+    enabled: false

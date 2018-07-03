@@ -1,0 +1,26 @@
+server:
+  port: 7005
+
+spring:
+  application:
+    name: cloud-config
+  cloud:
+    config:
+      profile: test
+      discovery:
+        enabled: true
+        service-id: config-server
+
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8888/eureka/,http://localhost:8889/eureka/
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.0.107:8888/eureka/,http://192.168.0.107:8889/eureka/
+
+management:
+  security:
+    enabled: false

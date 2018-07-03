@@ -1,0 +1,21 @@
+server:
+  port: 9000
+
+spring:
+  application:
+    name: ribbon-consumer
+
+#hello-service:
+#  ribbon:
+#    listOfServers: localhost:8081,localhost:8082
+#    NFLoadBalanceRuleClassName: com.netflix.loadbalancer.RandomRule
+
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8888/eureka/,http://localhost:8889/eureka/
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.0.105:8888/eureka/,http://192.168.0.105:8889/eureka/

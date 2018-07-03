@@ -1,0 +1,20 @@
+server:
+  port: 7888
+
+spring:
+  application:
+    name: producer
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brockers: localhost:9092
+          zk-nodes: localhost:2181
+          auto-create-topics: true
+      bindings:
+#        output:
+#          destination: stream-demo
+#          content-type: text/plain
+        myOutput:
+          destination: stream-demo
+          content-type: text/plain
